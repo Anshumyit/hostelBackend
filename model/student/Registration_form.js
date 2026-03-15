@@ -18,7 +18,7 @@ const RegistrationFormSchema = new mongoose.Schema(
       required: true,
       unique: true,
       trim: true,
-       match: [
+      match: [
         /^\+[1-9]\d{7,14}$/,
         'Please enter a valid international phone number with country code'
       ]
@@ -57,11 +57,18 @@ const RegistrationFormSchema = new mongoose.Schema(
       required: true
     },
 
-     
+
     isApproved: {
       type: Boolean,
       default: false
-    }
+    },
+
+    // paymentStatus: {
+    //   type: String,
+    //   default: "unpaid"
+    // },
+
+    // lastPaymentDate: Date
   },
   { timestamps: true }
 );

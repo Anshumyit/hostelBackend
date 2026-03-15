@@ -18,6 +18,10 @@ app.use('/',outincrequestRouter);
 const outingRequestRouterAdmin=require('./Router/admin/OutingRequestStatus');
 app.use('/',outingRequestRouterAdmin);
 
+const adminRegistrationRouter=require('./Router/admin/admin_registration');
+app.use('/',adminRegistrationRouter);
+
+
 
 
 app.listen(500,()=>{
