@@ -1,7 +1,8 @@
 const mongoose =require("mongoose");
 
 
-const mongoUrl ="mongodb://localhost:27017/Hostel_Management_System";
+// const mongoUrl ="mongodb://localhost:27017/Hostel_Management_System";
+const mongoUrl = "mongodb+srv://raghuveersonkar827_db_user:SFLWNg3MjCovopkd@cluster0.akqp8xq.mongodb.net/";
 
 // set up mongoDb
 
